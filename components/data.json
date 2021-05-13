@@ -1,0 +1,21 @@
+{
+    "carsNames": ["FordT","Garbus"],
+    "FordT": {
+        "fullName": "Ford Model T",
+        "params": [
+        "Years of production: 1908-1927",
+            "Produced by: Ford Motor Company",
+            "Maximum speed: 65 km/h",
+            "Curb weight: 540kg",
+            "Price: 28,000$"
+    ]},
+    "Garbus": {
+        "fullName": "Volkswagen Garbus",
+        "params": [
+        "Years of production: 1938-2003",
+            "Produced by: Volkswagen",
+            "Maximum speed: 135 km/h",
+            "Curb weight: 730-930kg",
+            "Price: ~16,000$"
+    ]}
+}

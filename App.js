@@ -3,6 +3,7 @@ import { StatusBar, Platform } from 'react-native';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
 import Main from "./components/Main.js";
+import Menu from "./components/Menu.js";
 
 export default function App() {
   const styles = StyleSheet.create({
@@ -21,12 +22,11 @@ export default function App() {
     }, 
     darkSpace: {
       flex: 4,
-      flexDirection: "row",
+      flexDirection: "column",
       backgroundColor: "#1E2021",
       width: "100%",
       alignItems: "stretch",
       textAlign: "center",
-      padding: 10,
       paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
       borderBottomLeftRadius: 10,
       borderBottomRightRadius: 10,
@@ -48,15 +48,26 @@ export default function App() {
       alignItems: "stretch",
       textAlign: "center",
     },
+    exitBtn: {
+      padding: 10,
+      borderRadius: 20,
+      backgroundColor: "transparent",
+      marginLeft: "auto",
+      marginRight: "auto",
+      alignItems: "center"
+    },
+    exitBtnContent: {
+      width: "100%",
+      textAlign: "center",
+      fontSize: 18,
+      fontFamily: "sans-serif-medium",
+      color: "red"
+    },
     carPhotoContainer: {
       marginLeft: "auto",
       marginRight: "auto",
-      width: "50%",
+      width: "60%",
       alignItems: "stretch",
-      height: "60%",
-      position: "absolute",
-      top: "0%",
-      left: "25%"
     },
     carPhoto: {
       marginLeft: "auto",
@@ -65,6 +76,15 @@ export default function App() {
       width: "100%",
       borderRadius: 10,
     },
+    carNameContainer: {
+      width: "100%",
+      position: "relative",
+      top: 0,
+      alignItems: "stretch",
+      marginLeft: "auto",
+      marginRight: "auto",
+      textAlign: "center"
+    }, 
     carName: {
       marginLeft: "auto",
       marginRight: "auto",
@@ -72,8 +92,6 @@ export default function App() {
       textAlign: "center",
       width: "100%",
       color: "white",
-      position: "relative",
-      top: "-20%",
       fontSize: 28,
       fontFamily: "sans-serif-medium"
     },
@@ -113,11 +131,45 @@ export default function App() {
     },
     disabledSection: {
       display: "none"
+    },
+  });
+  const menuStyles = StyleSheet.create({
+    safeAreaView: {
+      backgroundColor: "white",
+      height: "100%",
+      width: "100%",
+      alignItems: "center",
+      justifyContent: "center",
+      flex: 1,
+      flexDirection: "column"
+    },
+    menuOptionWrapper: {
+      width: "100%",
+      flex: 1,
+      backgroundColor: "#222",
+
+    },
+    menuOption: {
+      width: "80%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      alignItems: "center",
+      backgroundColor: "#ccc",
+      padding: 10,
+      borderRadius: 5,
+      marginBottom: 4
+    },
+    menuOptionText: {
+      width: "100%",
+      textAlign: "center",
+      fontSize: 21,
+      fontFamily: "sans-serif-medium"
     }
   });
   return (
     <SafeAreaView style={styles.container}>
-      <Main styles = {styles}/>
+      <Menu styles = {menuStyles} stylesForMain = {styles}/>
+      <StatusBar style="auto" />
     </SafeAreaView>
   );
-}
+} //<Main styles = {styles}/>
