@@ -66,7 +66,7 @@ export default function App() {
     carPhotoContainer: {
       marginLeft: "auto",
       marginRight: "auto",
-      width: "60%",
+      width: "55%",
       alignItems: "stretch",
     },
     carPhoto: {
@@ -145,25 +145,44 @@ export default function App() {
     },
     menuOptionWrapper: {
       width: "100%",
+      flex: 1
+    },
+    background: {
       flex: 1,
-      backgroundColor: "#222",
-
+      resizeMode: "cover",
+      justifyContent: "center",
+      width: "100%"
+    }, 
+    header: {
+      width: "90%",
+      marginLeft: "auto",
+      marginRight: "auto",
+      alignItems: "center",
+      marginBottom: 16,
+      padding: 10
+    }, 
+    headerText: {
+      textAlign: "center",
+      width: "100%",
+      fontSize: 28,
+      fontFamily: "monospace"
     },
     menuOption: {
       width: "80%",
       marginLeft: "auto",
       marginRight: "auto",
       alignItems: "center",
-      backgroundColor: "#ccc",
+      backgroundColor: "rgba(200,200,200,.7)",
       padding: 10,
       borderRadius: 5,
-      marginBottom: 4
+      marginBottom: 9
     },
     menuOptionText: {
       width: "100%",
       textAlign: "center",
       fontSize: 21,
-      fontFamily: "sans-serif-medium"
+      fontFamily: "Roboto",
+      fontWeight: "bold"
     }
   });
   return (
