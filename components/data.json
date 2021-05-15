@@ -1,57 +1,58 @@
 {
     "carsNames": ["FordT","Garbus","DB5", "fiat500","fiat126","valkyrie"],
+    "categories": ["Years of production","Produced by","Maximum speed","Curb weight","Price"],
     "FordT": {
         "fullName": "Ford Model T",
         "params": [
-        "Years of production: 1908-1927",
-            "Produced by: Ford Motor Company",
-            "Maximum speed: 65 km/h",
-            "Curb weight: 540kg",
-            "Price: 28,000$"
+        "1908-1927",
+            "Ford Motor Company",
+            "65 km/h",
+            "540kg",
+            "28,000$"
     ]},
     "Garbus": {
         "fullName": "Volkswagen Garbus",
         "params": [
-        "Years of production: 1938-2003",
-            "Produced by: Volkswagen",
-            "Maximum speed: 135 km/h",
-            "Curb weight: 730-930kg",
-            "Price: ~16,000$"
+        "1938-2003",
+            "Volkswagen",
+            "135 km/h",
+            "730-930kg",
+            "~16,000$"
     ]},
     "DB5": {
         "fullName": "Aston Martin DB5",
         "params": [
-        "Years of production: 1963–1965",
-            "Produced by: Aston Martin",
-            "Maximum speed: 230 km/h",
-            "Curb weight: 1465kg",
-            "Price: 725,000$"
+        "1963–1965",
+            "Aston Martin",
+            "230 km/h",
+            "1465kg",
+            "725,000$"
     ]},
     "fiat500": {
         "fullName": "Fiat 500",
         "params": [
-        "Years of production: 1957-1975",
-            "Produced by: FIAT",
-            "Maximum speed: 188 km/h",
-            "Curb weight: 470 - 520kg",
-            "Price: ~14,000$"
+        "1957-1975",
+            "FIAT",
+            "188 km/h",
+            "470 - 520kg",
+            "~14,000$"
     ]},
     "fiat126": {
         "fullName": "Fiat 126",
         "params": [
-        "Years of production: 1972–2000",
-            "Produced by: FIAT",
-            "Maximum speed: 115,7 km/h",
-            "Curb weight: 580 – 645kg",
-            "Price: ~9,000$"
+        "1972–2000",
+            "FIAT",
+            "115,7 km/h",
+            "580 – 645kg",
+            "~9,000$"
     ]},
     "valkyrie": {
         "fullName": "Aston Martin Valkyrie",
         "params": [
-        "Years of production: 2019-",
-            "Produced by: Aston Martin",
-            "Maximum speed: 402 km/h",
-            "Curb weight: 1050–1110kg",
-            "Price: 3,500,000$"
+        "2019-",
+            "Aston Martin",
+            "402 km/h",
+            "1050–1110kg",
+            "3,500,000$"
     ]}
 }

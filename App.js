@@ -1,8 +1,7 @@
 import React from 'react';
 import { StatusBar, Platform } from 'react-native';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
 
-import Main from "./components/Main.js";
 import Menu from "./components/Menu.js";
 
 export default function App() {
@@ -129,9 +128,13 @@ export default function App() {
       fontSize: 20,
       fontFamily: "Roboto",
     },
-    disabledSection: {
+    disabledName: {
       display: "none"
     },
+    disabledSection: {
+      flex: 0,
+      height: 0
+    }
   });
   const menuStyles = StyleSheet.create({
     safeAreaView: {
